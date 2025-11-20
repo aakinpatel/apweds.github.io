@@ -14,7 +14,7 @@ export interface RSVPFormData {
   email: string;
   phoneNumber: string;
   attending: 'yes' | 'no';
-  guests: number;
+  guests: number | string;
   message: string;
   guestSide: 'groom' | 'bride' | '';
 }
