@@ -13,7 +13,9 @@ export const WEDDING_DETAILS = {
     address: "1620 75th St, Downers Grove, IL 60516",
     mapUrl: "https://maps.google.com/?q=Ashyana+Banquets+Downers+Grove"
   },
-  story: `Our families have known each other for years, but it wasn't until a chance meeting at a Navratri Garba that our paths truly crossed. Bonding over a shared love for spicy chai, Bollywood classics, and travel, we knew this was something special. From that first dance to planning our future, our journey has been filled with laughter, tradition, and love.`,
+  story: `We met online, but it never felt like strangers meeting - it felt like fate. What began as friendship turned into a connection that neither of us could ignore. When we finally met in Indianapolis, it was our true Bollywood moment - the spark was instant, the chemistry effortless, and the feeling undeniable. That's when we knew this was real.
+
+Since 2023, distance has tested us, strengthened us, and proved that love always finds a way. We've become each other's strength and light through every challenge. Now, as we look toward 2026, we're ready to end the distance and begin the chapter destiny has always planned for us.`,
   faqs: [
     { question: "What is the dress code?", answer: "We encourage traditional Indian Formal or Black Tie. For the Sangeet, colorful Indian formal wear or Cocktail attire is recommended! For the Wedding Ceremony, please avoid wearing red (bride's color) or black." },
     { question: "Is the food vegetarian?", answer: "Yes, all meals served at the wedding events will be strictly vegetarian, with Jain options available upon request." },
