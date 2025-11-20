@@ -78,7 +78,7 @@ const InfoSection: React.FC = () => {
               <span className="text-wedding-500 font-serif italic tracking-wider text-lg">How it all began</span>
               <h2 className="font-serif text-5xl md:text-6xl text-wedding-800 mb-6 mt-2">Our Story</h2>
               <div className="w-24 h-1 bg-wedding-400 mx-auto md:mx-0 mb-8"></div>
-              <p className="text-wedding-700 leading-loose mb-6 text-lg font-light">
+              <p className="text-wedding-700 leading-loose mb-6 text-lg font-light whitespace-pre-line">
                 {WEDDING_DETAILS.story}
               </p>
               <div className="font-serif italic text-2xl text-wedding-500 mt-8 border-t border-wedding-200 pt-6 inline-block">
