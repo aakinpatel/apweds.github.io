@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { RSVPFormData, LoadingState } from '../types';
 import ScrollReveal from './ScrollReveal';
@@ -96,7 +97,16 @@ const RSVPForm: React.FC = () => {
       const numericValue = value.replace(/\D/g, '').slice(0, 10);
       setFormData(prev => ({ ...prev, [name]: numericValue }));
     } else if (name === 'guests') {
-      setFormData(prev => ({ ...prev, [name]: parseInt(value) || 1 }));
+      // Allow empty string for better typing experience
+      if (value === '') {
+        setFormData(prev => ({ ...prev, [name]: '' }));
+      } else {
+        const numVal = parseInt(value);
+        // Only update if it's a valid number and <= 15
+        if (!isNaN(numVal) && numVal <= 15) {
+          setFormData(prev => ({ ...prev, [name]: numVal }));
+        }
+      }
     } else {
       setFormData(prev => ({ ...prev, [name]: value }));
     }
@@ -129,7 +139,11 @@ const RSVPForm: React.FC = () => {
       formParams.append('phoneNumber', `'${formData.phoneNumber}`); // Prefix with ' to prevent Excel formatting issues
       formParams.append('guestSide', formData.guestSide);
       formParams.append('attending', formData.attending);
-      formParams.append('guests', formData.guests.toString());
+      
+      // Ensure guests is a valid number for the payload (default to 1 if empty)
+      const finalGuests = formData.guests === '' ? 1 : formData.guests;
+      formParams.append('guests', finalGuests.toString());
+      
       formParams.append('message', formData.message);
 
       // We use no-cors because Google Scripts handles redirects that standard fetch doesn't like
@@ -347,7 +361,7 @@ const RSVPForm: React.FC = () => {
                   <input
                     type="number"
                     min="1"
-                    max="5"
+                    max="15"
                     name="guests"
                     value={formData.guests}
                     onChange={handleChange}
