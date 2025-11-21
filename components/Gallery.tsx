@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Camera, Smartphone, UploadCloud } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
