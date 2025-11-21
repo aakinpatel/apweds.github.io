@@ -115,19 +115,22 @@ const Gallery: React.FC = () => {
 
                <h3 className="text-wedding-100 font-serif text-2xl mb-2">Scan to Upload</h3>
                
-               <div className="mt-8 pt-8 border-t border-white/10 w-full">
+               {/* Separator Line */}
+               <div className="w-16 h-px bg-wedding-200/50 mx-auto mb-6 mt-2"></div>
+               
+               <div className="w-full">
                  <div className="grid grid-cols-3 gap-2 w-full text-center max-w-xs mx-auto">
                    <div className="flex flex-col items-center">
                      <span className="font-serif text-xl md:text-2xl text-wedding-300 mb-1">01</span>
-                     <span className="text-[9px] md:text-[10px] text-wedding-100 uppercase tracking-wider leading-tight">Click Browse Files</span>
+                     <span className="text-[9px] md:text-[10px] text-wedding-100 uppercase tracking-wider leading-tight">Click Browse</span>
                    </div>
                    <div className="flex flex-col items-center">
                      <span className="font-serif text-xl md:text-2xl text-wedding-300 mb-1">02</span>
-                     <span className="text-[9px] md:text-[10px] text-wedding-100 uppercase tracking-wider leading-tight">Select Your Files</span>
+                     <span className="text-[9px] md:text-[10px] text-wedding-100 uppercase tracking-wider leading-tight">Select Files</span>
                    </div>
                    <div className="flex flex-col items-center">
                      <span className="font-serif text-xl md:text-2xl text-wedding-300 mb-1">03</span>
-                     <span className="text-[9px] md:text-[10px] text-wedding-100 uppercase tracking-wider leading-tight">Click Upload</span>
+                     <span className="text-[9px] md:text-[10px] text-wedding-100 uppercase tracking-wider leading-tight">Upload</span>
                    </div>
                  </div>
                </div>
