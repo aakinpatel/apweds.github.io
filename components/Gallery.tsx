@@ -72,7 +72,7 @@ const Gallery: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-serif text-xl text-wedding-800">2. Share</h4>
-                    <p className="text-sm text-wedding-600">Scan the QR code or use the link to upload instantly to our drive.</p>
+                    <p className="text-sm text-wedding-600">Scan the QR code or use the link to upload instantly to our digital album.</p>
                   </div>
                 </div>
               </div>
@@ -114,12 +114,22 @@ const Gallery: React.FC = () => {
                </ScrollReveal>
 
                <h3 className="text-wedding-100 font-serif text-2xl mb-2">Scan to Upload</h3>
-               <p className="text-wedding-300 text-xs uppercase tracking-widest">Save directly to Google Drive</p>
                
                <div className="mt-8 pt-8 border-t border-white/10 w-full">
-                  <p className="text-wedding-200/60 text-[10px] uppercase tracking-widest">
-                    Powered by Google Drive
-                  </p>
+
+               <div className="grid grid-cols-3 gap-2 w-full text-center max-w-xs mx-auto">
+                 <div className="flex flex-col items-center">
+                   <span className="font-serif text-xl md:text-2xl text-wedding-300 mb-1">01</span>
+                   <span className="text-[9px] md:text-[10px] text-wedding-100 uppercase tracking-wider leading-tight">Click Browse Files</span>
+                 </div>
+                 <div className="flex flex-col items-center">
+                   <span className="font-serif text-xl md:text-2xl text-wedding-300 mb-1">02</span>
+                   <span className="text-[9px] md:text-[10px] text-wedding-100 uppercase tracking-wider leading-tight">Select Your Files</span>
+                 </div>
+                 <div className="flex flex-col items-center">
+                   <span className="font-serif text-xl md:text-2xl text-wedding-300 mb-1">03</span>
+                   <span className="text-[9px] md:text-[10px] text-wedding-100 uppercase tracking-wider leading-tight">Click Upload</span>
+                 </div>
                </div>
             </div>
 
