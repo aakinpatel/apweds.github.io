@@ -5,7 +5,7 @@ export const WEDDING_DETAILS = {
   couple: {
     names: "Aakin Patel & Palak Patel",
     headline: "Forever Begins Now",
-    hashtag: "#AakinAndPalakPatel"
+    hashtag: "#AakinandPalak"
   },
   date: "July 19, 2026",
   location: {
